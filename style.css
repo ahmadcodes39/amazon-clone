@@ -1,0 +1,586 @@
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar {
+    background-color: black;
+    width: 100%;
+    /* position: fixed; */
+    top: 0;
+    position: sticky;
+    height: 68px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav_logo {
+    height: 50px;
+    width: 128px;
+}
+
+.logo {
+    background-image: url("https://th.bing.com/th/id/R.8a0202e54a5dec12ead7937a8b422469?rik=bU3K0BWqlSw20A&pid=ImgRaw&r=0&sres=1&sresct=1");
+    background-size: cover;
+    height: 43px;
+    width: auto;
+    margin-left: 12px;
+    margin-top: -6px;
+}
+
+.border {
+    border: 1.5px solid transparent;
+    box-sizing: border-box;
+}
+
+.border:hover {
+    border: 1.5px solid white;
+}
+
+/* box2 */
+.address {
+    margin-left: 19px;
+    padding: 4px;
+}
+
+.loc1 {
+    color: #CCCCCC;
+    font-size: 0.8rem;
+    margin-left: 15px;
+}
+
+.loc2 {
+    color: white;
+    font-size: 0.9rem;
+    /* margin-left: 4px; */
+    font-weight: bold;
+}
+
+.location_icon {
+    display: flex;
+}
+
+.nav_search {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#search_select {
+    height: 40px;
+    text-align: center;
+    width: 50px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: #dddada;
+}
+
+#search {
+    width: 400px;
+    height: 40px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding-inline-start: 6px;
+}
+
+.input_search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav_search:hover {
+    border: 1.5px solid #ffa200;
+    overflow: hidden;
+}
+
+.searchIcon {
+    width: 50px;
+    height: 40px;
+    background-color: #ffa200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.nav-select_language {
+    display: flex;
+    justify-content: center;
+    color: #D6D6D6;
+    padding: 4px;
+}
+
+.lan_logo {
+    width: 25px;
+    height: 20px;
+
+}
+
+.lan_select {
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.nav_returns {
+    padding: 4px;
+    margin-left: -2px;
+}
+
+
+.nav_signin {
+    margin-left: -16px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.nav-bolder {
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+
+
+.signin_para {
+    font-size: 12px;
+}
+
+.returns_para {
+    font-size: 12px;
+}
+
+.nav_cart i {
+    font-size: 30px;
+}
+
+.nav_cart {
+    font-size: 0.85rem;
+    font-weight: 900;
+    padding: 4px;
+}
+
+
+/* pannel bar  */
+.pannel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222f3d;
+    padding: 12px;
+}
+
+.pannelAll {
+    color: white;
+    padding: 3px;
+
+}
+
+.pannelAll i {
+    margin-right: 5px;
+    font-size: 14px;
+
+}
+
+.pannel_items a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 3px;
+}
+
+.side_pannel {
+    background: url("images/sidePannel_Logo.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 39px;
+    padding: 3px;
+}
+
+/* image slider */
+#outterslider {
+    width: 100%;
+    overflow: hidden;
+}
+
+#innerslider {
+    width: 12500px;
+    position: relative;
+    animation: imageSlider 15s ease-in-out 0s infinite;
+}
+
+#innerslider a img {
+    width: 1500px;
+    height: 400px;
+    float: left;
+}
+
+@keyframes imageSlider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -1500px;
+    }
+
+    45% {
+        left: -1500px;
+    }
+
+    50% {
+        left: -3000px;
+    }
+
+    70% {
+        left: -3000px;
+    }
+
+    75% {
+        left: -4500px;
+    }
+
+    95% {
+        left: -4500px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+/* #e2e7e6 */
+/* 007185 */
+.AllContent{
+    background-color: #e2e7e6;
+}
+.shopSection {
+   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 14px;
+    
+}
+
+.box {
+    width: 23%;
+    height: 450px;
+    background-color: white;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 30px 0px 25px;
+    margin-bottom: 23px;
+}
+
+.box h2 {
+    margin-left: 12px;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.item {
+    text-align: center;
+}
+.item p{
+    font-size: 12px;
+    text-align: left;
+    margin-left: 12px;
+    /* font-weight: bold; */
+}
+
+.item img {
+    width: 120px;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box a{
+    width: 219px;
+    height: 20px;
+    font-size: 13px;
+    color: #007185;
+    margin-top: 23px;
+    text-align: left;
+    margin-left: -30px;
+    text-decoration: none;
+    /* font-weight: 550; */
+}
+.box a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.box5img img{
+    width: 80px;
+    height: 140px;
+    
+}
+.one_img_boxex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box9{
+    width: 25%;
+    height: 450px;
+    background-color: white;
+    border-radius: 3px;
+    padding: 30px 0px 25px;
+    margin-bottom: 23px;
+    margin-left: 1.5%;
+}
+.box9 img{
+   width: 300px;
+    height: 276px;  
+}
+.box9 a{
+    text-align: left;
+    margin-left: -70px;
+}
+.Account_Recomendation {
+    width: 100%;
+    height: 126px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center;  */
+    margin-top: 20px;
+    flex-direction: column;
+}
+.firstHR{
+    margin-top: 32px;
+}
+.secondHR{
+    margin-bottom: 12px;
+}
+.Account_Recomendation p{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.Account_Recomendation button{
+    width: 230px;
+    height: 28px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: #f5be32;
+    color: #000000;
+    font-size: 13px;
+    box-shadow: 0 1px 0 #ffe093;
+    cursor: pointer;
+}
+.Account_Recomendation p a{
+    color: #007185;
+    font-size: 11px;
+    text-decoration: none;
+}
+.toTopBtn button{
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    background-color: #344E61;
+    height: 50px;
+    color: white;
+    cursor: pointer;
+}
+.toTopBtn button:hover{
+    opacity: 0.95;
+    cursor: pointer;
+}
+.Footer_Content{
+    background-color:#232f3e ;
+    height: 500px;
+}
+.General_Info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   margin-top: 2%;
+   margin-bottom: 1%;
+    color: white;
+    /* height: auto; */
+}
+.General_Info a{
+    display: block;
+    margin-bottom: 10px 0px;
+    text-decoration: none;
+    color: #DDDDDD;
+    padding: 5px 0px;
+   font-size: 14px;
+
+}
+.General_Info p{
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.General_Info a:hover{
+    text-decoration: underline;
+}
+.KnowUs{
+    width: 136px;
+    height: 251px;
+}
+.ContactUs{
+    width: 142px;
+    height: 251px;
+}
+.MakeMoney{
+    width:214px ;
+    height:251px;
+}
+.TakeHelp{
+    width: 188px;
+    height: 251px;
+}
+.img_logo_parent{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.img_logo_parent button{
+    margin-left: 25px;
+    padding: 6px 18px 6px 8px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    
+}
+.img_logo_parent button i{
+    margin-right: 5px;
+}
+.imgLogo{
+    background-image: url("https://th.bing.com/th/id/R.8a0202e54a5dec12ead7937a8b422469?rik=bU3K0BWqlSw20A&pid=ImgRaw&r=0&sres=1&sresct=1");
+    width: 76px;
+    height: 23px;
+    background-size: cover;
+    cursor: pointer;
+}
+.countriesLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.countriesLinks a {
+    margin-left: 15px; 
+    color: #DDDDDD;
+    text-decoration: none;
+    font-size: 12px;
+}
+.countriesLinks a:hover{
+    text-decoration: underline;
+}
+
+.SignInBox{
+    display: flex;
+    flex-direction:column;
+    /* justify-content: center; */
+    align-items: center;
+    /* border: 2px solid black; */
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    right: 40px;
+    top: 57px;
+    border-radius: 10px;
+    display: none;
+}
+
+.SignInBox button{
+    width: 230px;
+    height: 28px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: #f8e007b6;
+    color: #000000;
+    font-size: 13px;
+    box-shadow: 0 1px 0 #ffe093;
+    cursor: pointer;
+    margin: 1rem 0rem;
+}
+.SignInBox button a{
+    color: rgb(9, 9, 109);
+    font-size: 13px;
+}
+.SignInBox button a:hover{
+    text-decoration: underline;
+    color: orange;
+}
+.SignInBox p{
+    font-size: 14px;
+}
+.SignInBox a{
+    font-size: 14px;
+    color: blue;
+    text-decoration: none;
+}
+.SignInBox a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+.hiddenItems{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.hiddenItems a{
+    display: block;
+    margin: 0.5rem 0rem;
+    font-size: 12px;
+    color: #000000;
+    text-decoration: none;
+}
+.newLists{
+    width: 35%;
+    height: 251px;
+}
+.yourAccount{
+    width: 51%;
+    height: 251px;
+}
+.yourAccount p{
+    font-size: 19px;
+    font-weight: bold;
+}
+.newLists p{
+    font-size: 19px;
+    font-weight: bold;
+}
